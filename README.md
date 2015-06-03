@@ -15,18 +15,27 @@ et.listAccounts()
 
 ## Functions available (work in progess):
 listAccounts()
-  Lists all the accounts of the user. 
-  For more info see etrade's documentation
+  * Lists all the accounts of the user. 
+  * For more info see etrade's documentation
 
 getAccountBalance(AcctNumber)
+
 getAccountPositions(AcctNumber)
+
 getTransactionHistory(AcctNumber)
+
 getTransactionDetails(detailsURL)
-getOptionChains(chainType, expirationMonth, expirationYear, underlier, skipAdjusted = True):
+
+getOptionChains(chainType, expirationMonth, expirationYear, underlier, skipAdjusted = True)
+
 getOptionExpireDate(underlier)
+
 lookupProduct(company, assetType ='EQ')
+
 getQuote(symbolStringCSV, detailFlag = 'ALL' )
+
 listOrders(AcctNumber, marker = None)
+
 previewEquityOrder(AcctNumber, symbol, orderAction, quantity, priceType, 
                         clientOrderId = None,
                         limitPrice = None, 
@@ -40,7 +49,9 @@ previewEquityOrder(AcctNumber, symbol, orderAction, quantity, priceType,
                         *args,
                         **kwargs
                       )
+
 placeEquityOrder(liveParams)
+
 previewEquityOrderChange(AcctNumber, orderNum, quantity, priceType, 
                         clientOrderId = None,
                         limitPrice = None, 
@@ -52,11 +63,17 @@ previewEquityOrderChange(AcctNumber, orderNum, quantity, priceType,
                         *args,
                         **kwargs
                       )
-placeEquityOrderChange(liveParams):
-cancelOrder(AcctNumber, orderNum):
+
+placeEquityOrderChange(liveParams)
+
+cancelOrder(AcctNumber, orderNum)
 
 ## Authentication / Non-trading related methods (work in progess):
+
 getLimits()
+
 getNotifications()
+
 login()
+
 
