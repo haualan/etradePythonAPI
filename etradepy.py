@@ -606,7 +606,8 @@ def login():
 
 
 if __name__ == "__main__":
-  a = 3
+  login()
+  print listAccounts()
   pass
   # etst
 
