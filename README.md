@@ -11,4 +11,9 @@ Example workflow:
 import etradepy as et
 et.Login()
 et.listAccounts()
+<<<<<<< HEAD
 ```
+=======
+```
+
+>>>>>>> origin/master
