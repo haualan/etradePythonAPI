@@ -39,8 +39,8 @@ def getRequestToken():
                         callback_uri='oob')
 
   fetch_response = oauth.fetch_request_token(request_token_url)
-  resource_owner_key = fetch_response['oauth_token']
-  resource_owner_secret = fetch_response['oauth_token_secret']
+  # resource_owner_key = fetch_response['oauth_token']
+  # resource_owner_secret = fetch_response['oauth_token_secret']
  
 
   return fetch_response
@@ -77,7 +77,7 @@ def authorizeToken(requestTokenResponse):
     url = redirect_response
     browser.visit(url)
     
-    if browser.is_element_present_by_name('txtPassword', wait_time=1):
+    if browser.is_element_present_by_name('txtPassword', wait_time=0):
       
       browser.fill('USER', etrade_settings.username)
       time.sleep(3)
@@ -606,8 +606,8 @@ def login():
 
 
 if __name__ == "__main__":
-  login()
-  print listAccounts()
+  # login()
+  # print listAccounts()
   pass
   # etst
 
