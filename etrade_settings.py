@@ -1,5 +1,9 @@
 sandboxMode = False
-client_Consumer_Key= 'd072b5891c05ddc13ba79df99845d7e5'
-client_Consumer_Secret= 'b38d9f6cab889c35e34a03ee115472f9'
+
+#get these keys from ETrade when you activate the API priveleges on your account
+client_Consumer_Key= ''
+client_Consumer_Secret= ''
+
+# This is the usual login required for their website
 username = ''
 userpass = ''
