@@ -242,7 +242,13 @@ def getTransactionDetails(detailsURL):
   return accessMethod(detailsURL+'.json')
 
 
-def getOptionChains(chainType, expirationMonth, expirationYear, underlier, skipAdjusted = True):
+def getOptionChains(chainType, 
+                    expirationMonth, 
+                    expirationYear, 
+                    underlier, 
+                    skipAdjusted = True, 
+                    *args,
+                    **kwargs):
   """
   Gets Option Chain information according to an underlier <str> stock/company
   sample usage:
@@ -360,7 +366,9 @@ def previewEquityOrder(AcctNumber, symbol, orderAction, quantity, priceType,
                         reserveQuantity = None, 
                         marketSession = 'REGULAR',
                         orderTerm = 'GOOD_FOR_DAY',
-                        routingDestination = 'AUTO'
+                        routingDestination = 'AUTO',
+                        *args,
+                        **kwargs
                       ):
 
   """
@@ -466,6 +474,7 @@ def previewEquityOrderChange(AcctNumber, orderNum, quantity, priceType,
                         reserveOrder = False, 
                         reserveQuantity = None, 
                         orderTerm = 'GOOD_FOR_DAY',
+                        *args,
                         **kwargs
                       ):
 
